@@ -33,7 +33,7 @@ public class ParkingLotDemo {
         System.out.println(parkingSlipOptional2.get().getSlot().getLevel());
         System.out.println(parkingService.getVacantSlots().size());
 
-        System.out.println(parkingSlipOptional1.get().getSlot().getLevel());
-        System.out.println(parkingSlipOptional2.get().getSlot().getLevel());
+        System.out.println(parkingService.getParkingSlipVehicalMap().get(parkingSlipOptional1.get()).getRegistrationNo());
+        System.out.println(parkingService.getParkingSlipVehicalMap().get(parkingSlipOptional2.get()).getRegistrationNo());
     }
 }
